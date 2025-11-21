@@ -1,0 +1,50 @@
+.about-container {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    h1 {
+        color: white;
+        margin-bottom: 30px;
+    }
+}
+
+.about-content {
+    max-width: 900px;
+    
+    p {
+        color: white;
+        font-size: 1.1em;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .about-container {
+            padding: 5% 5%;
+        }
+        
+        .about-content {
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    @media (max-width: 567px) {
+        .about-container {
+            padding: 5% 5%;
+        }
+        
+        .about-content {
+            p {
+                font-size: 0.95em;
+            }
+        }
+    }
+}
+

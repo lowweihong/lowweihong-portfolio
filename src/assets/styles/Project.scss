@@ -13,11 +13,71 @@
   
 .projects-container .projects-grid .project {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.project h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project img + h2,
+.project video + h2 {
+    margin-top: 15px;
+}
+
+.project-link {
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+    
+    &:hover {
+        color: #5000ca;
+        text-decoration: underline;
+    }
 }
   
 .project h2:hover {
-    text-decoration: underline;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    text-decoration: none;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.repo-link {
+    color: #5000ca;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .15s ease-in-out;
+    
+    &:hover {
+        color: #6a1bd4;
+        text-decoration: underline;
+    }
+}
+
+.in-progress {
+    font-size: 0.7em;
+    color: #ffa500;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.project img {
+    display: block;
+    margin-bottom: 0;
+}
+
+.project-video {
+    display: block;
+    margin-bottom: 0;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #000;
 }
   
 .zoom {

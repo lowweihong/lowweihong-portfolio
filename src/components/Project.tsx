@@ -1,14 +1,4 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -64,7 +54,6 @@ function Project() {
                 <video 
                     src={`${process.env.PUBLIC_URL}/kgr.webm`} 
                     className="zoom project-video" 
-                    // controls 
                     width="100%"
                     preload="metadata"
                 >
@@ -86,7 +75,6 @@ function Project() {
             </div>
 
             <div className="project">
-                {/* <img src={mock01} className="zoom" alt="thumbnail" width="100%"/> */}
                 <h2>LLM-based Verilog Code Automation</h2>
                 <p>Developed LLM-based automation for Verilog code, streamlining issue resolution in repositories using SWE-bench-style techniques. Engineered Retrieval-Augmented Generation (RAG) workflows, optimizing Verilog task efficiency through advanced AI-driven solutions.</p>
                 <p><strong>Technologies:</strong> LLM, RAG, Python, PyTorch</p>

@@ -1,5 +1,4 @@
 import React from "react";
-import mock10 from '../assets/images/mock10.png';
 import '../assets/styles/Publications.scss';
 
 function Publications() {

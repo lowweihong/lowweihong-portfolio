@@ -52,7 +52,7 @@ function Project() {
 
             <div className="project">
                 <video 
-                    src={`${process.env.PUBLIC_URL}/kgr.webm`} 
+                    src={`${process.env.PUBLIC_URL}/kgr.gif`} 
                     className="zoom project-video" 
                     width="100%"
                     preload="metadata"

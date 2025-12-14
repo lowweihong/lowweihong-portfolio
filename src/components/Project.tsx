@@ -51,14 +51,12 @@ function Project() {
             </div>
 
             <div className="project">
-                <video 
+                <img 
                     src={`${process.env.PUBLIC_URL}/kgr.gif`} 
-                    className="zoom project-video" 
+                    className="zoom" 
+                    alt="Knowledge Graph Retriever Demo" 
                     width="100%"
-                    preload="metadata"
-                >
-                    Your browser does not support the video tag.
-                </video>
+                />
                 <h2>
                     <a href="https://github.com/KeXin95/HuggingfaceKG-retriever" target="_blank" rel="noreferrer" className="project-link">
                         Knowledge Graph Retriever with PCST <span className="in-progress">(In Progress)</span>

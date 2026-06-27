@@ -6,9 +6,55 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Key Projects & Achievements</h1>
         <div className="projects-grid">
-        <div className="project">
-                <img 
-                    src={`${process.env.PUBLIC_URL}/NPC-demo.gif`} 
+            <div className="project">
+                <img
+                    src={`${process.env.PUBLIC_URL}/cosmos.gif`}
+                    className="zoom"
+                    alt="Cosmos Data Gap Analyzer Demo"
+                    width="100%"
+                />
+                <h2>
+                    <a href="https://github.com/lowweihong/cosmos-data-analyzer" target="_blank" rel="noreferrer" className="project-link">
+                        Cosmos Data Gap Analyzer
+                    </a>
+                </h2>
+                <p>An agentic pipeline that turns a plain-English failure hypothesis into a validated, targeted training dataset for NVIDIA Cosmos. It derives evaluation criteria, generates diverse scenarios, and curates frames using a VLM judge. The hard part is the diversity-versus-relevance tradeoff, handled at two layers: a cosine-similarity filter at planning rejects near-identical scenarios, and a DSPy metric-driven guardrail at retry checks that rewritten prompts stay on-hypothesis before a retry is allowed.</p>
+                <p><strong>Technologies:</strong> FLUX.1-dev (NVIDIA NIM), Claude Sonnet (VLM judge), DSPy, SQLite + FTS5, Weights &amp; Biases</p>
+                <p className="project-links">
+                    <a href="https://github.com/lowweihong/cosmos-data-analyzer" target="_blank" rel="noreferrer" className="repo-link">
+                        View Repository →
+                    </a>
+                </p>
+            </div>
+
+            <div className="project">
+                <img
+                    src={`${process.env.PUBLIC_URL}/glossarion-demo.gif`}
+                    className="zoom"
+                    alt="Glossarion PDF to Knowledge-Graph Explorer Demo"
+                    width="100%"
+                />
+                <h2>
+                    <a href="https://glossariograph.xyz" target="_blank" rel="noreferrer" className="project-link">
+                        Glossarion — PDF to Knowledge-Graph Explorer
+                    </a>
+                </h2>
+                <p>A live Graph RAG product that turns uploaded PDFs into an interactive, explorable knowledge graph. The backend streams LLM-extracted entities and relationships to the client over SSE and renders them as a force-directed graph you can navigate in real time. Designed, built, and deployed end to end.</p>
+                <p><strong>Technologies:</strong> Next.js, Claude Sonnet, Server-Sent Events (SSE), Supabase, react-force-graph-2d</p>
+                <p className="project-links">
+                    <a href="https://glossariograph.xyz" target="_blank" rel="noreferrer" className="repo-link">
+                        Live Demo →
+                    </a>
+                    {" · "}
+                    <a href="https://github.com/lowweihong/glossarion" target="_blank" rel="noreferrer" className="repo-link">
+                        View Repository →
+                    </a>
+                </p>
+            </div>
+
+            <div className="project">
+                <img
+                    src={`${process.env.PUBLIC_URL}/NPC-demo.gif`}
                     className="zoom" 
                     alt="NPC Dialogue Generation Demo" 
                     width="100%"
